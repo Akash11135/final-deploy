@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" Component={Wrapper} />
         <Route exact path="/collections/:name" element={<Category />} />
-        <Route exact path="/products" element={<ProductDetails />} />
+        <Route exact path="/deploy/products" element={<ProductDetails />} />
       </Routes>
       <div className="bottom-0 w-full h-[10rem]">
         <Footer />

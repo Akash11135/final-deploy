@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = () => {
   const navigate = useNavigate();
   const handleProduct = () => {
-    navigate("/products");
+    navigate("/deploy/products");
   };
   const content = (
     <div className="product-container flex flex-col justify-between h-[450px] w-[400px]  cursor-pointer m-2">
-      <div className="m-auto">
+      <div className="m-auto" onClick={handleProduct}>
         <img
           src="https://www.istanbulfurniture.com/cdn/shop/collections/Cavalli-Black-Sofa_720x.jpg?v=1658408550"
           alt="#"
