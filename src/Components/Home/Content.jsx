@@ -64,55 +64,35 @@ const Content = () => {
           <div className="flex justify-between flex-wrap">
             <div className="flex flex-col">
               <div className="h-[200px] w-[150px] bg-neutral-200 flex items-center justify-center hover:shadow-xl ">
-                <img
-                  src="src\assets\catalogImg.webp"
-                  alt="#"
-                  className="h-[100px] w-[100px]"
-                />
+                <img src={slider1} alt="#" className="h-[100px] w-[100px]" />
               </div>
               <p className="text-center font-bold pt-2">Living Room</p>
             </div>
 
             <div className="flex flex-col">
               <div className="h-[200px] w-[150px] bg-neutral-200 flex items-center justify-center hover:shadow-xl ">
-                <img
-                  src="src\assets\catalogImg.webp"
-                  alt="#"
-                  className="h-[100px] w-[100px]"
-                />
+                <img src={slider1} alt="#" className="h-[100px] w-[100px]" />
               </div>
               <p className="text-center font-bold pt-2">Living Room</p>
             </div>
 
             <div className="flex flex-col">
               <div className="h-[200px] w-[150px] bg-neutral-200 flex items-center justify-center hover:shadow-xl ">
-                <img
-                  src="src\assets\catalogImg.webp"
-                  alt="#"
-                  className="h-[100px] w-[100px]"
-                />
+                <img src={slider1} alt="#" className="h-[100px] w-[100px]" />
               </div>
               <p className="text-center font-bold pt-2">Living Room</p>
             </div>
 
             <div className="flex flex-col">
               <div className="h-[200px] w-[150px] bg-neutral-200 flex items-center justify-center hover:shadow-xl ">
-                <img
-                  src="src\assets\catalogImg.webp"
-                  alt="#"
-                  className="h-[100px] w-[100px]"
-                />
+                <img src={slider1} alt="#" className="h-[100px] w-[100px]" />
               </div>
               <p className="text-center font-bold pt-2">Living Room</p>
             </div>
 
             <div className="flex flex-col">
               <div className="h-[200px] w-[150px] bg-neutral-200 flex items-center justify-center hover:shadow-xl ">
-                <img
-                  src="src\assets\catalogImg.webp"
-                  alt="#"
-                  className="h-[100px] w-[100px]"
-                />
+                <img src={slider1} alt="#" className="h-[100px] w-[100px]" />
               </div>
               <p className="text-center font-bold pt-2">Living Room</p>
             </div>
