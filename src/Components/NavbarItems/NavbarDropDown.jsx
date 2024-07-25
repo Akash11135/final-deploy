@@ -33,7 +33,7 @@ const NavbarDropdown = ({ title, dropdownItems }) => {
                 {section.items.map((item, idx) => (
                   <a
                     key={idx}
-                    href={`/collections/${item}`}
+                    href={`/final-deploy/collections/${item}`}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:rounded-xl"
                   >
                     {item}
@@ -46,7 +46,7 @@ const NavbarDropdown = ({ title, dropdownItems }) => {
               {dropdownItems.map((item, index) => (
                 <a
                   key={index}
-                  href={`/collections/${item}`}
+                  href={`/final-deploy/collections/${item}`}
                   target="_blank"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:rounded-xl"
                 >

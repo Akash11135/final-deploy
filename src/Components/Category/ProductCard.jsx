@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = () => {
   const navigate = useNavigate();
   const handleProduct = () => {
-    navigate("/deploy/products");
+    navigate("/final-deploy/products");
   };
   const content = (
     <div className="product-container flex flex-col justify-between h-[450px] w-[400px]  cursor-pointer m-2">
