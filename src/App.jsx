@@ -14,7 +14,11 @@ const App = () => {
       </div>
       <Routes>
         <Route exact path="/" Component={Wrapper} />
-        <Route exact path="/collections/:name" element={<Category />} />
+        <Route
+          exact
+          path="/final-deploy/collections/:name"
+          element={<Category />}
+        />
         <Route
           exact
           path="/final-deploy/products"
