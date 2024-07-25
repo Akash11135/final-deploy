@@ -5,7 +5,7 @@ const SmallProductCard = () => {
     <div className="flex flex-col h-[240px] w-[150px] bg-neutral-200 hover:shadow-xl">
       <div className=" flex items-center justify-center p-3  ">
         <img
-          src="src\assets\catalogImg.webp"
+          src="https://www.istanbulfurniture.com/cdn/shop/files/Royals-NewSectional-Gray-1_1080x.jpg?v=1701976939"
           alt="#"
           className="h-[100px] w-[100px]"
         />
