@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = () => {
   const navigate = useNavigate();
   const handleProduct = () => {
-    navigate("/final-deploy/products");
+    navigate("/products");
   };
   const content = (
     <div
