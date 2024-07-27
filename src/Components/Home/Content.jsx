@@ -3,12 +3,15 @@ import ImageSlider from "../Content/ImageSlider.jsx";
 import toast from "react-hot-toast";
 import ProductSlider from "../ProductSlider.jsx";
 import { useNavigate } from "react-router-dom";
+import FooterCards from "../Category/FooterCards.jsx";
 
 const Content = () => {
   const handleLogin = () => {
     toast.success("Login successfully.");
   };
-
+  const handleClearence = () => {
+    navigate("/clearance");
+  };
   const handleShopNow = () => {
     navigate("/collections/Living Room");
   };
@@ -149,8 +152,16 @@ const Content = () => {
               Our Brands
             </h1>
           </div>
-          <div>
-            <img src="https://www.istanbulfurniture.com/cdn/shop/files/bellona_logo_360x.png?v=1661181360" />
+          <div className="border  flex justify-around p-1">
+            <div className="h-[300px] w-[300px] hover:bg-neutral-50 hover:shadow-xl">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/bellona_logo_360x.png?v=1661181360" />
+            </div>
+            <div className="h-[300px] w-[300px] hover:bg-neutral-50 hover:shadow-xl">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/Cilek_Logo_Wiki-01_360x.png?v=1661180988" />
+            </div>
+            <div className="h-[300px] w-[300px] hover:bg-neutral-50 hover:shadow-xl">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/kilim-logo_360x.png?v=1661181566" />
+            </div>
           </div>
         </div>
 
@@ -371,8 +382,16 @@ const Content = () => {
               Our Brands
             </h1>
           </div>
-          <div>
-            <img src="src\assets\brands.png" />
+          <div className="border md:flex-col flex justify-around items-center p-1">
+            <div className="h-[300px] w-[300px] md:h-[250px] md:w-[250px]  ">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/bellona_logo_360x.png?v=1661181360" />
+            </div>
+            <div className="h-[300px] w-[300px] md:h-[250px] md:w-[250px]  ">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/Cilek_Logo_Wiki-01_360x.png?v=1661180988" />
+            </div>
+            <div className="h-[300px] w-[300px]  md:h-[250px] md:w-[250px] ">
+              <img src="https://www.istanbulfurniture.com/cdn/shop/files/kilim-logo_360x.png?v=1661181566" />
+            </div>
           </div>
         </div>
 
@@ -427,7 +446,7 @@ const Content = () => {
 
       {/* Clearence */}
 
-      <div className="clearence mt-20 w-[80%] m-auto">
+      {/* <div className="clearence mt-20 w-[80%] m-auto">
         <div className="p-5">
           <h1 className="text-[2rem] md:text-[1rem] md:mt-2 md:mb-2">
             Clearence
@@ -436,6 +455,10 @@ const Content = () => {
         <div>
           <img src="src\assets\clearence.png" alt="#" />
         </div>
+      </div> */}
+
+      <div className="mt-10">
+        <FooterCards />
       </div>
     </div>
   );

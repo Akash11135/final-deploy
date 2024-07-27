@@ -92,7 +92,7 @@ const Navbar = () => {
           <div className="p-4">
             <div className="flex items-center mb-4">
               <img
-                src="src\assets\newArrivals.avif"
+                src="https://www.istanbulfurniture.com/cdn/shop/files/Massimo-Shawl-Turkish-Luxury-Furniture-Set-5_b856b289-db9c-465b-8787-b9a7e8bddffb_900x.jpg?v=1719919826"
                 alt="Product"
                 className="w-24 h-24 mr-4"
               />

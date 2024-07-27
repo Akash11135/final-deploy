@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import SmallProductCard from "../Category/SmallProductCard.jsx";
 import Slider from "./Slider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 const ProductDetails = () => {
   const { name } = useParams();
   const [dropDown, setDropdown] = useState(false);
@@ -106,11 +107,11 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        <div className="description mt-10  mb-10 md:mb-5md:mt-5 flex justify-center items-center text-center p-3 h-[10%] w-full ">
-          <ul className=" w-[50%] ">
+        <div className="description mt-10  mb-10 md:mb-5 md:mt-5 flex justify-center items-center text-center p-3 h-[10%] w-full ">
+          <ul className=" w-[50%] md:w-full ">
             <li
               onClick={(e) => toggleDropdown("Description")}
-              className="cursor-pointer text-xl md:text-sm p-3 border-b-[1px]  flex justify-between  hover:bg-neutral-200"
+              className="cursor-pointer text-xl md:text-sm p-3 border-b-[1px]  flex justify-between  hover:bg-neutral-200 "
             >
               Description
               <span
@@ -235,10 +236,15 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        <div className="w-[70%] m-auto mb-[5rem] hidden md:block">
-          <div className="more" onClick={handleLinks}>
-            <div className="p-5">
+        <div className="w-[70%] m-auto mb-[5rem] hidden md:block md:m-0 md:w-full">
+          <div className="more">
+            <div className="p-5 flex justify-between">
               <h1 className="text-[2rem] md:text-[1rem]">More from product</h1>
+              <button>
+                <a href={`/final-deploy/collections/More`}>
+                  <IoIosArrowForward />
+                </a>
+              </button>
             </div>
             <div className="flex justify-between ">
               <div className="relative  ">
@@ -246,9 +252,14 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="recent" onClick={handleLinks}>
-            <div className="p-5">
+          <div className="recent">
+            <div className="p-5 flex justify-between">
               <h1 className="text-[2rem] md:text-[1rem]">Recently viewed</h1>
+              <button>
+                <a href={`/final-deploy/collections/Recent`}>
+                  <IoIosArrowForward />
+                </a>
+              </button>
             </div>
             <div className="flex justify-between ">
               <div className="relative  ">
@@ -256,9 +267,14 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="like" onClick={handleLinks}>
-            <div className="p-5">
+          <div className="like">
+            <div className="p-5 flex justify-between">
               <h1 className="text-[2rem] md:text-[1rem]">You May Also Like</h1>
+              <button>
+                <a href={`/final-deploy/collections/You May Also Like`}>
+                  <IoIosArrowForward />
+                </a>
+              </button>
             </div>
             <div className="flex justify-between ">
               <div className="relative  ">

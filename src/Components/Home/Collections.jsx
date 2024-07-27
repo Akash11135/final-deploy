@@ -1,18 +1,22 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { useEffect } from "react";
-import Sidebar from "./Sidebar";
-import ProductCard from "./ProductCard";
-import FooterCards from "./FooterCards.jsx";
-import SmallProductCart from "./SmallProductCard.jsx";
-const Category = () => {
-  const { name } = useParams();
+import React from "react";
+import Sidebar from "../Category/Sidebar";
+import ProductCard from "../Category/ProductCard";
+import { useNavigate } from "react-router-dom";
 
+const Collections = () => {
+  const navigate = useNavigate();
+  const handleHome = () => {
+    navigate("/");
+  };
+  const handleApply = () => {
+    navigate("/contacts");
+  };
   return (
     <>
       <div className="catalog-container border border-b-[1px] mb-5 pb-3 ">
         <div className="catalog w-[75%] sm:w-full m-auto ">
           <div className="p-5">
-            <h1 className="text-[2rem]">{name}</h1>
+            <h1 className="text-[2rem]">Collections.</h1>
             <hr />
           </div>
           <div className="w-full bg-slate-300 flex  sm:flex-col p-3 text-center justify-center items-center">
@@ -20,8 +24,11 @@ const Category = () => {
               0% Interest For 12 Months
             </p>
             <p className="m-2  align-middle">Instant credit decision</p>
-            <button className="bg-black text-white m-2 p-2 align-middle">
-              <a href="/final-deploy/contacts">Apply Now</a>
+            <button
+              className="bg-black text-white m-2 p-2 align-middle"
+              onClick={handleApply}
+            >
+              Apply Now
             </button>
           </div>
         </div>
@@ -34,7 +41,7 @@ const Category = () => {
           </div>
 
           <div className="flex-grow md:w-full">
-            <div className="flex flex-wrap justify-center mt-8 ">
+            <div className="flex flex-wrap justify-center mt-8">
               {Array.from({ length: 8 }).map((_, index) => (
                 <div
                   key={index}
@@ -45,9 +52,9 @@ const Category = () => {
                       "https://www.istanbulfurniture.com/cdn/shop/collections/Cavalli-Black-Sofa_720x.jpg?v=1658408550"
                     }
                     alt="image"
-                    className="h-[150px] w-[150px] m-4 md:h-[100px] md:w-[100px]"
+                    className="h-[150px] w-[150px] md:h-[100px] md:w-[100px] m-4"
                   />
-                  <span className="font-semibold text-lg">Sofas</span>
+                  <span className="font-semibold text-lg">{name}</span>
                 </div>
               ))}
             </div>
@@ -70,7 +77,7 @@ const Category = () => {
 
         <div className="text-xl items-center mt-5 border-t-[1px]">
           <p className="ml-2 p-5">Recently viewed</p>
-          {/* <div className="product-container flex flex-col justify-between h-[300px] w-[250px]  cursor-pointer m-2">
+          <div className="product-container flex flex-col justify-between h-[300px] w-[250px]  cursor-pointer m-2">
             <div className="m-auto">
               <img
                 src="https://www.istanbulfurniture.com/cdn/shop/collections/Cavalli-Black-Sofa_720x.jpg?v=1658408550"
@@ -92,15 +99,19 @@ const Category = () => {
               </div>
               <div className="price font-semibold pt-2 text-sm">$9999</div>
             </div>
-          </div> */}
+          </div>
+        </div>
+        <div className="login mt-20 opacity-90" onClick={handleHome}>
+          <h1 className="text-[2rem] pt-2">Back to Shopping</h1>
           <div>
-            <SmallProductCart />
+            <button className="bg-black text-white p-3 rounded-sm hover:border border-none cursor-pointer">
+              Home
+            </button>
           </div>
         </div>
       </div>
-      <FooterCards />
     </>
   );
 };
 
-export default Category;
+export default Collections;
