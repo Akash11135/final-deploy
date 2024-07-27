@@ -8,6 +8,7 @@ import Footer from "./Components/Home/Footer";
 import ProductDetails from "./Components/ProductDetails/ProductDetails.jsx";
 import ShopClearence from "./Components/Home/ShopClearence.jsx";
 import Contacts from "./Components/Category/Contacts.jsx";
+import ScrollToTop from "./Components/Category/ScrollToTop.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <div className="sticky top-0 z-20">
         <Navbar />
       </div>
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" Component={Wrapper} />
         <Route exact path="/collections/:name" element={<Category />} />

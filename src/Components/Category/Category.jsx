@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Sidebar from "./Sidebar";
 import ProductCard from "./ProductCard";
 import FooterCards from "./FooterCards.jsx";
-import SmallProductCart from "./SmallProductCard.jsx";
+import SmallProductCard from "./SmallProductCard.jsx";
 const Category = () => {
   const { name } = useParams();
 
@@ -94,7 +94,7 @@ const Category = () => {
             </div>
           </div> */}
           <div>
-            <SmallProductCart />
+            <SmallProductCard />
           </div>
         </div>
       </div>
