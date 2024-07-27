@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import ProductSlider from "../ProductSlider.jsx";
 import { useNavigate } from "react-router-dom";
 import FooterCards from "../Category/FooterCards.jsx";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Content = () => {
   const handleLogin = () => {
@@ -324,8 +325,13 @@ const Content = () => {
 
       <div className="w-[70%] m-auto mb-[5rem] hidden md:block ">
         <div className="catalog">
-          <div className="p-5">
+          <div className="p-5 md:w-full md:flex md:justify-between md:items-center">
             <h1 className="text-[2rem] md:text-[1rem]">Catalog</h1>
+            <button>
+              <a href={`/final-deploy/collections/Catalog`}>
+                <IoIosArrowForward />
+              </a>
+            </button>
           </div>
           <div className="flex justify-between ">
             <div className="relative  w-[100%] max-w-4xl h-80">
@@ -334,8 +340,13 @@ const Content = () => {
           </div>
         </div>
         <div className="new-arrivals">
-          <div className="p-5">
+          <div className="p-5 md:w-full md:flex md:justify-between md:items-center ">
             <h1 className="text-[2rem] md:text-[1rem]">New Arrivals</h1>
+            <button>
+              <a href={`/final-deploy/collections/New Arrivals`}>
+                <IoIosArrowForward />
+              </a>
+            </button>
           </div>
           <div className="flex justify-between ">
             <div className="relative  w-[100%] max-w-4xl h-80">
@@ -344,8 +355,13 @@ const Content = () => {
           </div>
         </div>
         <div className="collection">
-          <div className="p-5">
+          <div className="p-5 md:w-full md:flex md:justify-between md:items-center">
             <h1 className="text-[2rem] md:text-[1rem]">Luxary Collection</h1>
+            <button>
+              <a href={`/final-deploy/collections/Luxary Collections`}>
+                <IoIosArrowForward />
+              </a>
+            </button>
           </div>
           <div className="flex justify-between ">
             <div className="relative  w-[100%] max-w-4xl h-80">
@@ -354,8 +370,13 @@ const Content = () => {
           </div>
         </div>
         <div className="combo">
-          <div className="p-5">
+          <div className="p-5 md:w-full md:flex md:justify-between md:items-center">
             <h1 className="text-[2rem] md:text-[1rem]">Furniture Combos</h1>
+            <button>
+              <a href={`/final-deploy/collections/Furniture Combos`}>
+                <IoIosArrowForward />
+              </a>
+            </button>
           </div>
           <div className="flex justify-between ">
             <div className="relative  w-[100%] max-w-4xl h-80">
@@ -364,8 +385,13 @@ const Content = () => {
           </div>
         </div>
         <div className="best deal">
-          <div className="p-5">
+          <div className="p-5 md:w-full md:flex md:justify-between md:items-center">
             <h1 className="text-[2rem] md:text-[1rem]">Best Deal</h1>
+            <button>
+              <a href={`/final-deploy/collections/Best Deals`}>
+                <IoIosArrowForward />
+              </a>
+            </button>
           </div>
           <div className="flex justify-between ">
             <div className="relative  w-[100%] max-w-4xl h-80">

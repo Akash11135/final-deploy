@@ -47,7 +47,7 @@ const Category = () => {
                     alt="image"
                     className="h-[150px] w-[150px] m-4 md:h-[100px] md:w-[100px]"
                   />
-                  <span className="font-semibold text-lg">Sofas</span>
+                  <span className="font-semibold text-lg">{name}</span>
                 </div>
               ))}
             </div>
@@ -68,7 +68,7 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="text-xl items-center mt-5 border-t-[1px]">
+        <div className=" items-center mt-5 border-t-[1px]">
           <p className="ml-2 p-5">Recently viewed</p>
           {/* <div className="product-container flex flex-col justify-between h-[300px] w-[250px]  cursor-pointer m-2">
             <div className="m-auto">
@@ -93,7 +93,11 @@ const Category = () => {
               <div className="price font-semibold pt-2 text-sm">$9999</div>
             </div>
           </div> */}
-          <div>
+          <div className="flex flex-wrap justify-around gap-2">
+            <SmallProductCard />
+            <SmallProductCard />
+            <SmallProductCard />
+            <SmallProductCard />
             <SmallProductCard />
           </div>
         </div>
